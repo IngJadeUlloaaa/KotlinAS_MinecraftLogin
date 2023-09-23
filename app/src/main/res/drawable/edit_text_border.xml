@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Normal State - No Selection -->
+    <item android:state_focused="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/inputs_colors" /> <!-- Background color when not selected -->
+            <corners android:radius="20dp" /> <!-- Corner radius for rounded edges -->
+            <stroke android:width="2dp" android:color="@color/inputs_colors" /> <!-- purple border -->
+        </shape>
+    </item>
+    <!-- When the users put the inputs -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/inputs_colors" /> <!-- Background color when selected -->
+            <corners android:radius="20dp" /> <!-- Corner radius for rounded edges -->
+            <stroke android:width="2dp" android:color="@color/pure_purple" /> <!-- purple border -->
+        </shape>
+    </item>
+</selector>
